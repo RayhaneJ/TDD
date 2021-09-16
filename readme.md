@@ -16,6 +16,7 @@
 - [x] Implémentation du get et set traduction dans Dictionary
 - [x] Amélioration des tests existant pour tester Dictionary
 - [x] Ajouter le test FakeIt à traduction multiples
+- [x] Implémentation des tests pour test après refactorisation 
 
 ### __Quel duplication existe dans notre code ?__
 On a une méthode getName qui ne retourne rien de cohérent, juste un champ de texte "Example". De plus le constructeur ne retourne rien. L'utilité prévu à notre constructeur est l'initilisation de variable afin d'éviter toute redondance dans des set de variable privé future qui sont encapsuler dans notre classe Dictionary.

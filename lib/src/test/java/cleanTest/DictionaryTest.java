@@ -3,6 +3,7 @@ package cleanTest;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Enumeration;
 
@@ -15,6 +16,10 @@ public class DictionaryTest {
     @Before
     public void initialize(){
         dictionary = new Dictionary("MonDico");
+    }
+
+    public void cleanup(){
+        dictionary.clean();
     }
 
     @Test
@@ -35,11 +40,12 @@ public class DictionaryTest {
 
     @Test public void testOneTranslation() {
         dictionary.addTranslation("ensemble", "together");
-        assertThat(dictionary.getTranslation("ensemble"), equalTo("together"));
+        assertThat(dictionary.getMutliplesTranslations("ensemble"), containsInAnyOrder("together"));
     }
 
     @Test public void testMultiplesTranslation() {
-        dictionary.addTranslation("ensemble", Arrays.asList("together", "assembly"));
-        assertThat(dictionary.getTranslation("ensemble"), containsInAnyOrder("together", "assembly"));
+        dictionary.addTranslation("ensemble", "together");
+        dictionary.addTranslation("ensemble", "assembly");
+        assertThat(dictionary.getMutliplesTranslations("ensemble"), containsInAnyOrder("together", "assembly"));
     }
 }

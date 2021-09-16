@@ -1,12 +1,14 @@
 package cleanTest;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Dictionary {
     private String nom;
     private Map<String, List<String>> translations;
+
+    public void clean(){
+        translations.clear();
+    }
 
     public Dictionary(String nom){
         this.nom = nom;
@@ -20,11 +22,18 @@ public class Dictionary {
         return translations.isEmpty();
     }
 
-    public void addTranslation(String original, List<String> translatedWords){
-        translations.put(original, translatedWords);
+    public void addTranslation(String original, String translatedWord){
+        if(!translations.containsKey(original)) {
+            List<String> arraylist1 = new ArrayList<String>();
+            arraylist1.add(translatedWord);
+            translations.put(original, arraylist1);
+        }
+        else {
+            translations.get(original).add(translatedWord);
+        }
     }
 
-    public List<String> getTranslation(String original){
+    public List<String> getMutliplesTranslations(String original){
         return translations.get(original);
     }
 }
