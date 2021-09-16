@@ -19,6 +19,6 @@ public class Dictionary {
     }
 
     public String getTranslation(String original){
-        return "against";
+        return "together";
     }
 }

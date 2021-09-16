@@ -22,7 +22,7 @@ public class DictionaryTest {
 
     @Test public void testOneTranslation() {
         Dictionary dictionary = new Dictionary("MonDico");
-        dictionary.addTranslation("contre", "against");
-        assertThat(dictionary.getTranslation("contre"), equalTo("against"));
+        dictionary.addTranslation("ensemble", "together");
+        assertThat(dictionary.getTranslation("ensemble"), equalTo("together"));
     }
 }
