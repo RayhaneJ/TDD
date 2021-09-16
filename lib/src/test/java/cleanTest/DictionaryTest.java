@@ -19,4 +19,10 @@ public class DictionaryTest {
         Dictionary dictionary = new Dictionary("MonDico");
         assertThat(dictionary.isEmpty(), equalTo(true));
     }
+
+    @Test public void testOneTranslation() {
+        Dictionary dictionary = new Dictionary("MonDico");
+        dictionary.addTranslation("contre", "against");
+        assertThat(dictionary.getTranslation("contre"), equalTo("against"));
+    }
 }
