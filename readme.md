@@ -6,6 +6,6 @@
 ### __Liste de tâche__
 - [x] Creer la classe de test 
 - [x] Creer un test non fonctionnel 
-
+- [x] Commencer l'écriture de la class dictionary 
 
 
