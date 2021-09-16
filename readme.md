@@ -3,4 +3,9 @@
 ### __Hamcrest__ : Hamcress est un framework permettant d'assister le développeur lors de l'écriture de test. Il permet de définir des correspondance de façon déclarative.
 ### __Mockito__ : Mockito est un framework permettant la création de test. Ils nous donne la possibilité d'espionner des objets, simuler et vérifier des comportements et simplie les tests unitaires
 
+### __Liste de tâche__
+- [x] Creer la classe de test 
+- [x] Creer un test non fonctionnel 
+
+
 
