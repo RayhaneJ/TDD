@@ -9,6 +9,7 @@
 - [x] Commencer l'écriture de la class dictionary 
 - [x] Refactorisé 
 - [x] Implémenter un test non fonctionnel pour méthode isEmpty 
+- [ ] Implémenter méthode pour ajouter élèments dans Dictionary class
 
 ### __Quel duplication existe dans notre code ?__
 On a une méthode getName qui ne retourne rien de cohérent, juste un champ de texte "Example". De plus le constructeur ne retourne rien. L'utilité prévu à notre constructeur est l'initilisation de variable afin d'éviter toute redondance dans des set de variable privé future qui sont encapsuler dans notre classe Dictionary. 
