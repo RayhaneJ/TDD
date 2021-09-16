@@ -21,6 +21,7 @@
 - [x] Modifier test pour Green Bar 
 - [x] Implémentation pour résoudre reverso traduction 
 - [x] Ajout DictionaryParser test 
+- [x] Ajouter jacoco tâche
 
 ### __Quel duplication existe dans notre code ?__
 On a une méthode getName qui ne retourne rien de cohérent, juste un champ de texte "Example". De plus le constructeur ne retourne rien. L'utilité prévu à notre constructeur est l'initilisation de variable afin d'éviter toute redondance dans des set de variable privé future qui sont encapsuler dans notre classe Dictionary.
