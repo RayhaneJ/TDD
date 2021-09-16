@@ -33,6 +33,7 @@ Avec addTranslation la seule est unique utilé d'un test aurait été de vérifi
 On peut créer un attribut traductions de type HashMap avec comme valeur correspondante une liste de String.
 Exemple : private Map<String, List<String>>> translations
 Dans ce cas on pourra rajouter plusieurs traductions à un mot donné.
+L'implémentation en vue de la résolution de ce problème ce fait dans notre méthode addTranslation comparé à notre solution rapide où l'implémentation c'est faite directement dans la méthode de test.
 
 ### Mock
 ### __Type du Mock ?__
