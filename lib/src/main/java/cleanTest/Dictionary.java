@@ -35,7 +35,10 @@ public class Dictionary {
         }
         else {
             translations.get(original).add(translatedWord);
-            translations.get(translatedWord).add(original);
+
+            List<String> reversoWords = new ArrayList<String>();
+            reversoWords.add(original);
+            translations.put(translatedWord, reversoWords);
         }
     }
 
