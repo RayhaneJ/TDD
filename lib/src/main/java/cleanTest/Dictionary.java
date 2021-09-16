@@ -24,12 +24,18 @@ public class Dictionary {
 
     public void addTranslation(String original, String translatedWord){
         if(!translations.containsKey(original)) {
-            List<String> arraylist1 = new ArrayList<String>();
-            arraylist1.add(translatedWord);
-            translations.put(original, arraylist1);
+            List<String> translatedWords = new ArrayList<String>();
+            translatedWords.add(translatedWord);
+
+            List<String> reversoWords = new ArrayList<String>();
+            reversoWords.add(original);
+
+            translations.put(original, translatedWords);
+            translations.put(translatedWord, reversoWords);
         }
         else {
             translations.get(original).add(translatedWord);
+            translations.get(translatedWord).add(original);
         }
     }
 

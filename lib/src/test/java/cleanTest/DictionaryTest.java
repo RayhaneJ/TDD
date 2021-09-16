@@ -51,7 +51,6 @@ public class DictionaryTest {
 
     @Test public void testReversibleTranslation() {
         dictionary.addTranslation("ensemble", "together");
-        dictionary.addTranslation("together", "ensemble");
         assertThat(dictionary.getMutliplesTranslations("together"), containsInAnyOrder("ensemble"));
     }
 }
