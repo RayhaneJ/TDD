@@ -34,4 +34,7 @@ On peut créer un attribut traductions de type HashMap avec comme valeur corresp
 Exemple : private Map<String, List<String>>> translations
 Dans ce cas on pourra rajouter plusieurs traductions à un mot donné.
 
+### Mock
+### __Type du Mock ?__
+Le type du Mock sera un FileStream comme c'est un fichier et que l'on lit un flux de données.
 
