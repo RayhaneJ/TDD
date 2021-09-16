@@ -1,5 +1,6 @@
 package cleanTest;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class Dictionary {
@@ -8,13 +9,14 @@ public class Dictionary {
 
     public Dictionary(String nom){
         this.nom = nom;
+        translations = new HashMap<String, String>();
     }
     public String getName(){
         return nom;
     }
 
     public Boolean isEmpty(){
-        return false;
+        return translations.isEmpty();
     }
 
     public void addTranslation(String original, String translated){
