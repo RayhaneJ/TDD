@@ -18,10 +18,10 @@ public class Dictionary {
     }
 
     public void addTranslation(String original, String translated){
-
+        translations.put(original, translated);
     }
 
     public String getTranslation(String original){
-        return "together";
+        return translations.get(original);
     }
 }
