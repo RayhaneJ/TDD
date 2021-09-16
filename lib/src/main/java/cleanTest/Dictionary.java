@@ -1,7 +1,10 @@
 package cleanTest;
 
+import java.util.Map;
+
 public class Dictionary {
     private String nom;
+    private Map<String, String> translations;
 
     public Dictionary(String nom){
         this.nom = nom;
