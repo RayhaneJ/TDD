@@ -15,9 +15,16 @@ public class DictionaryTest {
     }
 
     @Test
-    public void testDictionaryEmptyCount(){
+    public void testDictionaryEmpty(){
         Dictionary dictionary = new Dictionary("MonDico");
         assertThat(dictionary.isEmpty(), equalTo(true));
+    }
+
+    @Test
+    public void testDictionaryNotEmpty(){
+        Dictionary dictionary = new Dictionary("MonDico");
+        dictionary.addTranslation("ensemble", "together");
+        assertThat(dictionary.isEmpty(), equalTo(false));
     }
 
     @Test public void testOneTranslation() {
