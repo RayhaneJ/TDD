@@ -39,3 +39,10 @@ L'implémentation en vue de la résolution de ce problème ce fait dans notre m�
 ### __Type du Mock ?__
 Le type du Mock sera un FileStream comme c'est un fichier et que l'on lit un flux de données.
 
+### Couverture
+### __Taux de couverture ?__
+On peut espèrer au moins 80% de taux de couverture étant donné qu'on n'écrit le test tout en écrivant le code.
+
+### Conclusion
+Le TDD permet de maitrise le code que l'on écrit. Autrement dit on écrit le code pour que celui sois valide donc pas de surprise en fin de session d'écriture de code ou lors du lancement d'un projet. Cependant on peut vite répondre au besoin de test et non des fonctionalité/besoin du client.
+

@@ -4,6 +4,13 @@
 
 // pour data providers -> JUnit 4 + package en plus ou TestNG ou JUnit 5
 
+jacocoTestReport {
+    reports {
+        xml.required = false
+        csv.required = false
+    }
+}
+
 plugins {
     // application Java
     id 'application'
